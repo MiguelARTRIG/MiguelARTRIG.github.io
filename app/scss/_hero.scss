@@ -1,0 +1,241 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+.sunset{
+    position: fixed;
+    z-index: -1;
+}
+.sec_1{
+position: relative;
+}
+
+
+.sec1_desc{
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+top: 335px;
+h1{
+    color: white;
+    font-size: 60px;
+    font-family: 'Aclonica', sans-serif;
+}
+h3{
+    color: white;
+    font-size: 20px;
+}
+img{
+    max-width: fit-content;
+}
+}
+
+
+
+
+.whitespace{
+    height: 700px;
+}
+
+
+.section_1{
+    display: flex;
+    background: #995D81;
+    align-items: center;
+    padding: 50px;
+    flex-direction: column;
+}
+.section1_firstline{
+    display: flex;
+    align-items: center;
+}
+.symbols{
+    display: flex;
+    gap: 200px;
+    margin-top: 100px;
+}
+
+.section_1_p2{
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    h2{
+        color: white;
+    }
+    a{
+        background: white;
+        padding: 25px;
+        border-radius: 35px;
+        margin-top: 40px;
+        text-decoration: none;
+        font-family: "Roboto Condensed", sans-serif;
+        color:#995d81;
+        font-size: 23px;
+    }
+}
+
+
+//.section_2{
+   // display: flex;
+    //justify-content: space-between;
+   // padding: 150px;
+   // h3{
+      //  color: white;
+   // }
+//}
+
+.section_2{
+    background: #F3997B;
+    display: flex;
+    justify-content:center;
+    gap: 150px;
+    padding: 90px;
+    flex-direction: column;
+    align-items: center;
+    .section2_1line{
+        display: flex;
+        gap: 40px;
+    }
+    .section2_2line{
+        display: flex;
+        gap: 40px;
+    }
+    h2{
+        color: white;
+        margin-top: 90px;
+        font-size: 20px;
+    }
+    .box{
+        width: 329px;
+        height: 188px;
+        background: white;
+    }
+    .section3_p1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+.section_3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    img{
+        margin-right: 90px;
+    }
+ .text1{
+    font-size: 40px;
+    font-weight: 700;
+ }
+ .text2{
+    margin-bottom: 110px;
+    position: absolute;
+    margin-left: 265px;
+ }
+ .text4{
+    margin-bottom: 110px;
+    position: absolute;
+    margin-left: 265px;
+ }
+ .text6{
+    margin-bottom: 110px;
+    position: absolute;
+    margin-left: 265px;
+ }
+ .tab_text1{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+ }
+ .tab_text2{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+ }
+ .tab_text3{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+ }
+    h1,h2,h3{
+        color: rgb(253, 253, 253);
+    }
+}
+
+.section_4{
+    background: #995D81;
+    display: flex;
+    padding: 60px;
+    .backtotop{
+        position: absolute;
+        left: 800px;
+        margin-top: 400px;
+        a{
+            display: flex;
+            flex-direction: column-reverse;
+            text-decoration: none;
+            color: white;
+            align-items: center;
+        }
+    }
+    h1{
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        margin-left: 200px;
+        align-items: center;
+        input{
+            border-radius: 10px;
+            color: white;
+            border-style: none;
+            margin-bottom: 10px;
+            padding: 20px;
+            font-size: 16px;
+            width: 578px;
+            outline: none;
+            height: 64px;
+            border: 2px rgb(32, 241, 13);
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+        button{
+            
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.4);
+            border: none;
+            width: 208px;
+            height: 64px;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 17px;
+            font-weight: 700;
+        }
+        
+        textarea{
+            width: 578px;
+            outline: none;
+            height: 181px;
+            padding: 10px;
+            border-radius: 10px;
+            border-style: none;
+            margin-bottom: 10px;
+            color: white;
+            background-color: rgba(255, 255, 255, 0.4);
+            &::placeholder{
+                font-size: 17px;
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+    }
+
+}
