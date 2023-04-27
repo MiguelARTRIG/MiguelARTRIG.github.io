@@ -1,0 +1,48 @@
+#presentation{
+    position: relative;
+    z-index: 1;
+    top: 160px;
+ .presentation_presentation{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1,h3,a,li{
+        color: white;
+        text-decoration: none;
+        list-style: none;
+    }
+    .presentation_btn{
+        width: 250px;
+        height: 75px;
+        background: #ff7a00;
+        cursor: pointer;
+        border-radius: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            
+            font-size: 36px;
+            font-weight: 700;
+        }
+      
+    }
+    h1{
+        font-size: 48px;
+        font-weight: 800;
+    }
+    h3{
+        font-size: 27px;
+        font-weight: 400;
+    }
+ }
+.BigLogoSec{
+    position: relative;
+    z-index: 1;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+   
+
+}
+}

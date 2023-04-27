@@ -1,0 +1,72 @@
+
+.background_img{
+    position: fixed;
+    z-index: 0;
+    height: 1080px;
+    width: 1920px;
+}
+.navbar{
+    
+    padding: 40px 40px;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,0.20);
+    justify-content: space-between;
+    font-family: 'Alumni Sans', sans-serif;
+    
+    .LogoeNome{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: 50px;
+        .logonome{
+            height: 40px;
+        }
+        .logo{
+            height: 50px;
+        }
+    }
+    .header_menu{
+        align-items: center;
+        display: flex;
+        gap: 70px;
+        margin-right: 50px;
+        list-style: none;  
+        .menu_list{
+                color: white;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 27px;
+                transition: color 300ms ease-in-out;
+                &:hover{
+                    color: #ff7a00;
+                }
+            }
+        .menu_button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 230px;
+            height: 60px;
+            border-radius: 70px;
+            background: #222342;
+            transition: background 400ms ease-in-out;
+            cursor: pointer;
+            &:hover{
+                background: #ff7a00;
+               
+            }
+            a{
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+             }
+        }
+    }
+}
