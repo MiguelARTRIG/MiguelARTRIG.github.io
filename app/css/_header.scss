@@ -2,12 +2,12 @@
 .background_img{
     position: fixed;
     z-index: 0;
-    height: 1080px;
-    width: 1920px;
+    height: 100%;
+    width: 100%;
 }
 .navbar{
     
-    padding: 40px 40px;
+    padding: 2rem;
     z-index: 5;
     top: 0;
     left: 0;
@@ -18,55 +18,246 @@
     background: rgba(255,255,255,0.20);
     justify-content: space-between;
     font-family: 'Alumni Sans', sans-serif;
-    
-    .LogoeNome{
+    height: 2.93rem;
+    transition: 0.3s ease-in-out;
+    @include breakpoint(plarge){
+      padding: 2rem;
+   }
+    @include breakpoint(xlarge){
+        padding: 2.5rem;
+     }
+     @include breakpoint(xxlarge){
+        padding: 3rem;
+     }
+    .logoNav{
+        height: 1.4rem;
+    }
+    .nameNav{
+        height: 1.0rem;
+    }
+    .mutal_header{
         display: flex;
         align-items: center;
-        gap: 10px;
-        margin-left: 50px;
-        .logonome{
-            height: 40px;
+        gap: 0.2rem;
+        justify-content: center;
+        transition: 0.3s ease-in-out;
+        @include breakpoint(xlarge){
+            gap: 0.2rem; 
+           
+          } 
+          @include breakpoint(xxlarge){
+            gap: 0.4rem; 
+           
+          }   
+    img{
+        transition: height 0.3s ease-in-out;
+    
         }
-        .logo{
-            height: 50px;
+        .logoNav{
+            @include breakpoint(large){
+                height: 1.8rem;
+               
+              } 
+          
+            @include breakpoint(xlarge){
+                height: 2.2rem;
+               
+              } 
+              @include breakpoint(xxlarge){
+                height: 3rem;
+               
+              } 
+            
+        }
+        .nameNav{
+            @include breakpoint(large){
+                height: 1.2rem;
+               
+              } 
+            @include breakpoint(xlarge){
+                height: 1.5rem;
+               
+              } 
+              @include breakpoint(xxlarge){
+                height: 2rem;
+               
+              } 
         }
     }
-    .header_menu{
+    .navbar_menu{
+        display: none;
         align-items: center;
-        display: flex;
-        gap: 70px;
-        margin-right: 50px;
         list-style: none;  
+        flex-grow: 1;
+        justify-content: flex-end;
+        
+        @include breakpoint(large){
+            display: flex;
+        }
+     
+        li{
+            transition: margin 0.3s ease-in-out;
+            &:not(:last-child){
+                margin-right: 20px;
+                display: flex;
+                @include breakpoint(plarge){
+                    margin-right: 40px;
+                   
+                   }
+                  @include breakpoint(xlarge){
+                    margin-right: 50px;
+                   
+                   }
+                   @include breakpoint(xxlarge){
+                    margin-right: 60px;
+                   
+                   }  
+            }
+        }
+     
         .menu_list{
                 color: white;
                 text-decoration: none;
                 font-weight: 500;
-                font-size: 27px;
+                font-size: 17px;
                 transition: color 300ms ease-in-out;
+             
                 &:hover{
                     color: #ff7a00;
                 }
+                @include breakpoint(plarge){
+                  font-size: 1.3rem;
+                 
+                 
+                } 
+                @include breakpoint(xlarge){
+                    font-size: 1.5rem;
+                   
+                   
+                  } 
+                  @include breakpoint(xxlarge){
+                    font-size: 1.7rem;
+                   
+                   
+                  }  
             }
         .menu_button{
+          
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 230px;
-            height: 60px;
+            width: 130px;
+            height: 30px;
             border-radius: 70px;
             background: #222342;
             transition: background 400ms ease-in-out;
+            transition: height 0.3s ease, width 0.3s ease;
             cursor: pointer;
+            @include breakpoint(plarge){
+              width: 140px;
+             height: 40px;
+             
+            } 
+            @include breakpoint(xlarge){
+                width: 160px;
+               height: 40px;
+               
+              } 
+              @include breakpoint(xxlarge){
+                width: 180px;
+               height: 50px;
+               
+              }  
             &:hover{
                 background: #ff7a00;
                
             }
             a{
+            
             font-weight: 700;
             color: white;
             text-decoration: none;
-            font-size: 30px;
+            font-size: 20px;
+            @include breakpoint(plarge){
+              font-size: 1.56rem;
+             
+             }
+            @include breakpoint(xlarge){
+                font-size: 1.87rem;
+               
+               }
+              @include breakpoint(xxlarge){
+                font-size: 2.18rem;
+               
+               }   
+       
              }
         }
     }
+    .hamburgerANDmenu{
+        display: flex;
+        flex-direction: column;
+    
+    .header_toggle{
+        cursor: pointer;
+        @include breakpoint(large){
+            display: none;
+        }
+
+        span{
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: black;
+            transition: all 300ms ease-in-out;
+            transform-origin: 3px 1px;
+        
+            &:not(:last-child){
+                margin-bottom: 5px;
+            }
+ 
+    }
+    &.open {
+
+                
+        span:first-child {
+         transform: rotate(45deg);
+       }
+       
+        span:nth-child(2) {
+         opacity: 0;
+       }
+       
+        span:last-child {
+         transform: rotate(-45deg);
+       }
+     
+    }
 }
+.mobile_menu{
+    position: absolute;
+    width: calc(100% - 10rem);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #222342;
+    margin-top: 1.5rem;
+    padding: 1.625rem;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.6s ease;
+    opacity: 0;
+  
+    .mobile_list{
+        color: #dbdada;
+        transition: color 300ms ease-in-out;
+        &:hover{
+            color: #ff7a00;
+        }
+
+    }
+}
+.ShowMenu{
+    opacity: 1;
+ 
+}
+    }}

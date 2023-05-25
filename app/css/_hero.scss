@@ -1,48 +1,39 @@
-#presentation{
-    position: relative;
-    z-index: 1;
-    top: 160px;
- .presentation_presentation{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    h1,h3,a,li{
-        color: white;
-        text-decoration: none;
-        list-style: none;
-    }
-    .presentation_btn{
-        width: 250px;
-        height: 75px;
-        background: #ff7a00;
-        cursor: pointer;
-        border-radius: 70px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        a{
-            
-            font-size: 36px;
-            font-weight: 700;
-        }
-      
-    }
-    h1{
-        font-size: 48px;
-        font-weight: 800;
-    }
-    h3{
-        font-size: 27px;
-        font-weight: 400;
-    }
- }
-.BigLogoSec{
-    position: relative;
-    z-index: 1;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-   
 
-}
+#section__1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    top: 5rem;
+    position: relative;
+    z-index: 1;
+    @include breakpoint(large){
+       display: none;
+       
+       }  
+    h1{
+        font-size: 1rem;
+        color: white;
+    }
+    h2{
+        font-size: 0.70rem;
+        color: white;
+    }
+    a{
+        height: 32.06px;
+        width: 106.31px;
+        background: #ff7a00;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        font-size: 15.19px;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 1rem;
+    }
+    img{
+        height: 9.52rem;
+    }
 }

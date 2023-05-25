@@ -1,10 +1,30 @@
 
 
   @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans&display=swap');
-
-*{
+html{
+  font-size: 100%;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+  list-style: none;
+}
+body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+  
     font-family: 'Alumni Sans', sans-serif ;
+}
+h1,h2,h3{
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+p{
+  margin-top: 0;
+}
+a, a:visited, a:active{
+  text-decoration: none;
 }
