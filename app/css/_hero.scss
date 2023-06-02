@@ -3,26 +3,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem;
     top: 5rem;
     position: relative;
     z-index: 1;
     @include breakpoint(large){
-       display: none;
-       
-       }  
+        flex-direction: inherit;
+        
+        }  
     h1{
+        font-weight: 800;
         font-size: 1rem;
-        color: white;
+        color:black;
+        margin-top: 2rem;
     }
     h2{
+        margin-top: 0.5rem;
         font-size: 0.70rem;
-        color: white;
+        color: black;
+        text-align: center;
+        display: inline-block;
+        width: 320px;
+        font-weight: 400;
     }
     a{
         height: 32.06px;
         width: 106.31px;
-        background: #ff7a00;
+        background: #56cdcd;
         border-radius: 30px;
         display: flex;
         justify-content: center;
@@ -31,9 +38,26 @@
         font-size: 15.19px;
         font-weight: 700;
         color: white;
-        margin-bottom: 1rem;
+        margin-top: 0.5rem;
     }
-    img{
+    .mobileBigLogo{
         height: 9.52rem;
+        @include breakpoint(large){
+            display: none;
+            
+            }  
+    }
+    .DeskBigLogo{
+        height: 14.28rem;
+        width: 20.47rem;
+        @include breakpoint(large){
+            height: 20.52rem;
+            
+            }  
+    }
+    .sec1_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

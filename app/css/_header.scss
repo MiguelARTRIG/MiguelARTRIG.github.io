@@ -1,10 +1,4 @@
 
-.background_img{
-    position: fixed;
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-}
 .navbar{
     
     padding: 2rem;
@@ -15,7 +9,7 @@
     position: fixed;
     display: flex;
     align-items: center;
-    background: rgba(255,255,255,0.20);
+    background: #F0F0F0;
     justify-content: space-between;
     font-family: 'Alumni Sans', sans-serif;
     height: 2.93rem;
@@ -30,10 +24,11 @@
         padding: 3rem;
      }
     .logoNav{
-        height: 1.4rem;
+        height: 1.67rem;
     }
     .nameNav{
-        height: 1.0rem;
+        height:1.21rem;
+        width: 3.20rem;
     }
     .mutal_header{
         display: flex;
@@ -126,7 +121,7 @@
                     color: #ff7a00;
                 }
                 @include breakpoint(plarge){
-                  font-size: 1.3rem;
+                  font-size: 1.1rem;
                  
                  
                 } 
@@ -154,8 +149,8 @@
             transition: height 0.3s ease, width 0.3s ease;
             cursor: pointer;
             @include breakpoint(plarge){
-              width: 140px;
-             height: 40px;
+              width: 135px;
+             height: 35px;
              
             } 
             @include breakpoint(xlarge){
@@ -179,7 +174,7 @@
             text-decoration: none;
             font-size: 20px;
             @include breakpoint(plarge){
-              font-size: 1.56rem;
+              font-size: 1.30rem;
              
              }
             @include breakpoint(xlarge){
@@ -251,7 +246,7 @@
         color: #dbdada;
         transition: color 300ms ease-in-out;
         &:hover{
-            color: #ff7a00;
+            color: #56CDCD;
         }
 
     }
