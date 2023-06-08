@@ -30,3 +30,39 @@ xclick.addEventListener('click', function(){
   
 
 })
+
+
+const buttons = document.querySelectorAll('.button');
+const designItems = document.querySelectorAll('.design-item');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const index = button.dataset.index;
+
+    // Remove a classe 'active' de todos os botões e designs
+    buttons.forEach(btn => btn.classList.remove('active'));
+    designItems.forEach(item => item.classList.remove('active'));
+
+    // Adiciona a classe 'active' apenas ao botão e design correspondentes
+    button.classList.add('active');
+    designItems[index - 1].classList.add('active');
+  });
+});
+
+
+
+const items = document.querySelectorAll(".accordion button");
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+  
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+  
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion)); 
