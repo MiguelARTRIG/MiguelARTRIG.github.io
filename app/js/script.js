@@ -35,6 +35,9 @@ xclick.addEventListener('click', function(){
 const buttons = document.querySelectorAll('.button');
 const designItems = document.querySelectorAll('.design-item');
 
+buttons[0].classList.add('active');
+designItems[0].classList.add('active');
+
 buttons.forEach(button => {
   button.addEventListener('click', () => {
     const index = button.dataset.index;
