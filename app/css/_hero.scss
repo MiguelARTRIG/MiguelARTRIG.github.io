@@ -19,7 +19,7 @@
     }
     h2{
         margin-top: 0.5rem;
-        font-size: 0.80rem;
+        font-size: 1rem;
         color: black;
         text-align: center;
         display: inline-block;
@@ -62,6 +62,7 @@
     }
 }
 .divider_webdesign{
+  padding: 2rem;
     background: #F0F0F0;
     width: 100%;
     height: 64px;
@@ -70,7 +71,7 @@
     justify-content: center;
     display: flex;
     h1{
-        font-size: 15px;
+        font-size: 1.1rem;
         font-weight: 800;
         display: contents;
     }
@@ -96,10 +97,10 @@
     margin-top: 0.5rem;
     flex-direction: column;
 .sec2_motivos{
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
     h1{
         text-align: center;
-        font-size: 16px;
+        font-size: 1.2rem;
     }
 }
     
@@ -110,19 +111,22 @@
         align-items: center;
         grid-gap: 20px;
         h3{
-            font-size: 13px;
+            font-size: 1rem;
             font-weight: 400;
             position: relative;
             bottom: 0;
         }
+        .h2-sec2{
+          height: 43px;
         h2{
-            font-size: 12px;
+            font-size: 1.2rem;
             font-weight: 700;
             margin-top: 0.5rem;
         }
+      }
         .img_Text{
             text-align: center;
-            height: 180px;
+            height: 200px;
             .box_img{
                 height: 80px;
                 width: auto;
